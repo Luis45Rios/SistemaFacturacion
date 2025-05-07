@@ -4,6 +4,8 @@
  */
 package app_1;
 
+import package_Interface.frm_inicio_sesion;
+
 /**
  *
  * @author Usuario Win10
@@ -14,7 +16,9 @@ public class App_1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        frm_inicio_sesion iniciar = new frm_inicio_sesion();
+        iniciar.setLocationRelativeTo(null); // Centrar la ventana
+        iniciar.setVisible(true); // Hacerla visible
     }
     
 }

@@ -116,8 +116,10 @@ public class frm_inicio_sesion extends javax.swing.JFrame {
             lbl_ingreso.setText("Ingrese la contraseña:");
             passwordVisible = true;
         } else {
-            if (txt_password.getPassword().equals("2p")) {
-                lbl_ingreso.setText("Hola Benigno, BIENVENIDO");
+            if (txt_password.getText().equalsIgnoreCase("2p")) {
+                this.dispose();
+                frm_inicio inicio = new frm_inicio();
+                inicio.setVisible(true);
             } else {
                 lbl_ingreso.setText("Contraseña incorrecta");
             }
