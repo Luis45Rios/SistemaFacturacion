@@ -26,7 +26,7 @@ public class frm_inicio extends javax.swing.JFrame {
 
         // Agregar el evento
         jMenuItemNuevoProducto.addActionListener((java.awt.event.ActionEvent evt) -> {
-            this.dispose();
+            this.setVisible(false);
             frm_nuevoProducto nuevoProducto = new frm_nuevoProducto();
             nuevoProducto.setVisible(true);
         });
