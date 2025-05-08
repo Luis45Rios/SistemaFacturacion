@@ -1,4 +1,2 @@
-Marcadores
-esferos
-Cuadernos
-Libretas
+001,Esferos Punta fina N-R-A,500,0.4
+209,Hojas Papel Bond 25H,5,0.35

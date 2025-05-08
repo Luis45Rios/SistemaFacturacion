@@ -83,6 +83,11 @@ public class frm_inicio extends javax.swing.JFrame {
 
         jMenuItem2.setFont(new java.awt.Font("Verdana", 2, 11)); // NOI18N
         jMenuItem2.setText("Ventas");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem2);
 
         jMenuBar1.add(jMenu2);
@@ -122,8 +127,15 @@ public class frm_inicio extends javax.swing.JFrame {
 
     private void menu_CerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_CerrarActionPerformed
         // TODO add your handling code here:
-        this.dispose();
+        System.exit(0);
     }//GEN-LAST:event_menu_CerrarActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+        frm_ventas ventas = new frm_ventas();
+        ventas.setVisible(true);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments
